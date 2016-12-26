@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure xmlns="urn:jboss:deployment-structure:1.2">
+    <deployment>
+        <exclusions>
+            <module name="org.picketbox" />                      <!-- Important for secured calls to 4.2.3 -->
+        </exclusions>
+        <dependencies>
+            <!-- <module name="com.oneandone.infrro.spp.jbossmessaging" />   Important for calls to 4.2.3 -->
+            <module name="org.jboss.resteasy.resteasy-jaxrs" />  <!-- For REST calls -->
+            <module name="org.apache.httpcomponents" />          <!-- For REST calls -->
+            <module name="org.apache.commons.codec" />           <!-- For REST calls -->
+            <!-- <module name="org.infinispan" />                      For Caching -->
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>

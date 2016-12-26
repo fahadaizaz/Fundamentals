@@ -1,0 +1,12 @@
+{
+  "name": "${app.name}",
+  "finalName": "${buildFinalName}",
+  "groupId": "${project.groupId}",
+  "artifactId": "${project.artifactId}",
+  "version": "${project.version}",
+  "description": "${project.description}",
+  "scmUrl": "${project.scm.connection}",
+  "buildNumber": "${buildNumber}",
+  "buildTimestamp": "${buildTimestamp}",
+  "buildUser": "${env.USER}"
+}
